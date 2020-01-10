@@ -1,0 +1,116 @@
+/* pages/goos_detail/index.wxss */
+page {
+    margin-bottom: 90rpx;
+}
+
+.goods_detail {
+    swiper {
+        height    : 65vw;
+        text-align: center;
+
+        swiper-item {
+            image {
+                width: 60%;
+            }
+        }
+    }
+
+    .goods_price_name {
+        .goods_price {
+            color      : var(--themeColor);
+            font-size  : 35rpx;
+            font-weight: bold;
+            padding    : 15rpx;
+        }
+
+        .goods_name_row {
+            display       : flex;
+            flex-direction: row;
+
+            .goods_name {
+                display           : -webkit-box;
+                overflow          : hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-indent       : 5rpx;
+                padding           : 0 15rpx;
+                flex              : 4;
+
+            }
+
+            .goods_collect {
+                flex           : 1;
+                font-weight    : bold;
+                display        : flex;
+                justify-content: center;
+                flex-direction : column;
+                align-items    : center;
+                border-left    : 1rpx solid black;
+            }
+        }
+
+
+    }
+
+    .goods_info {
+        .goods_info_title {
+            color        : var(--themeColor);
+            font-weight  : bold;
+            font-size    : 35rpx;
+            text-indent  : 25rpx;
+            padding      : 15rpx 0;
+            border-top   : solid 15rpx #dedede;
+            border-bottom: solid 15rpx #dedede;
+        }
+
+    }
+
+    .btn_tool {
+        position        : fixed;
+        left            : 0;
+        bottom          : 0;
+        width           : 100%;
+        background-color: #fff;
+        height          : 90rpx;
+        display         : flex;
+        flex-direction  : row;
+
+        .tool_item {
+            position       : relative;
+            flex           : 1;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            font-size      : 25rpx;
+
+            text {
+                white-space: nowrap;
+            }
+
+            button {
+                position: absolute;
+                left    : 0;
+                top     : 0;
+                opacity : 0;
+                width   : 100%;
+                height  : 100%;
+            }
+        }
+
+        .btn_cart {
+            flex            : 2;
+            background-color: #ffa300;
+            color           : white;
+            font-weight     : bold;
+        }
+
+        .btn_buy {
+            color           : white;
+            font-weight     : bold;
+            flex            : 2;
+            background-color: #fa554f;
+        }
+    }
+
+}
