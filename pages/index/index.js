@@ -7,7 +7,7 @@ Page({
         floorList: []
     },
     //options(Object)
-    onLoad: function(options) {
+    onLoad: function (options) {
         // swiperList
         request({
             url: apis.getSwiperList
@@ -33,32 +33,32 @@ Page({
             })
         });
     },
-    onReady: function() {
+    onReady: function () {
 
     },
-    onShow: function() {
+    onShow: function () {
 
     },
-    onHide: function() {
+    onHide: function () {
 
     },
-    onUnload: function() {
+    onUnload: function () {
 
     },
-    onPullDownRefresh: function() {
+    onPullDownRefresh: function () {
 
     },
-    onReachBottom: function() {
+    onReachBottom: function () {
 
     },
-    onShareAppMessage: function() {
+    onShareAppMessage: function () {
 
     },
-    onPageScroll: function() {
+    onPageScroll: function () {
 
     },
     //item(index,pagePath,text)
-    onTabItemTap: function(item) {
+    onTabItemTap: function (item) {
 
     }
 });

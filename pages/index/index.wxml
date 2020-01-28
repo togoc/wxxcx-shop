@@ -1,13 +1,7 @@
 <view>
   <SearchInput />
   <view class="index_swiper">
-    <swiper
-      autoplay="{{true}}"
-      interval="3000"
-      indicator-dots
-      circular
-      indicator-active-color="#ff2d4a"
-    >
+    <swiper autoplay="{{true}}" interval="3000" indicator-dots circular indicator-active-color="#ff2d4a">
       <swiper-item wx:for="{{swiperList}}" wx:key="index">
         <navigator url="{{item.navigator_url}}">
           <image src="{{item.image_src}}" lazy-load="true" mode="widthFix" />
@@ -15,28 +9,23 @@
       </swiper-item>
     </swiper>
   </view>
+
   <view class="index_cate">
-    <navigator
-    open-type="switchTab"
-     wx:for="{{cateList}}" wx:key="index" url="{{item.navigator_url}}">
+    <navigator open-type="switchTab" wx:for="{{cateList}}" wx:key="index" url="{{item.navigator_url}}">
       <image src="{{item.image_src}}" mode="widthFix" lazy-load="true" />
     </navigator>
   </view>
 
-  <viee class="index_floor">
+  <view class="index_floor">
     <view class="floor_group" wx:for="{{floorList}}" wx:for-item="group_item" wx:key="index">
       <view class="floor_group_title">
         <image src="{{group_item.floor_title.image_src}}" mode="widthFix" lazy-load="false" />
       </view>
       <view class="floor_group_list">
         <navigator wx:for="{{group_item.product_list}}" wx:key="index" url="{{item.navigator_url}}">
-          <image
-            src="{{item.image_src}}"
-            mode="{{index*2==0?'widthFix':'scaleToFill'}}"
-            lazy-load="false"
-          />
+          <image src="{{item.image_src}}" mode="{{index*2==0?'widthFix':'scaleToFill'}}" lazy-load="false" />
         </navigator>
       </view>
     </view>
-  </viee>
+  </view>
 </view>
