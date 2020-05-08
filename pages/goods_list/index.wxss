@@ -1,1 +1,38 @@
-.first_tab{display:flex;flex-direction:column}.first_tab .goods_item{display:flex;flex-direction:row}.first_tab .goods_item .goods_img_wrap{flex:2}.first_tab .goods_item .goods_img_wrap image{height:70%}.first_tab .goods_item .goods_info_wrap{display:flex;flex:3;justify-content:center;flex-direction:column;padding:0 30rpx}.first_tab .goods_item .goods_info_wrap .goods_name{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2}.first_tab .goods_item .goods_info_wrap .goods_price{padding:20rpx 0;color:red;font-size:35rpx}
+.first_tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.first_tab .goods_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.first_tab .goods_item .goods_img_wrap {
+  flex: 2;
+}
+
+.first_tab .goods_item .goods_img_wrap image {
+  height: 70%;
+}
+
+.first_tab .goods_item .goods_info_wrap {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30rpx;
+}
+
+.first_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.first_tab .goods_item .goods_info_wrap .goods_price {
+  padding: 20rpx 0;
+  color: red;
+  font-size: 35rpx;
+}

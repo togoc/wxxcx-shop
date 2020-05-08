@@ -92,10 +92,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "订单列表",
 					"pathName": "pages/order/index",
-					"query": "",
+					"query": "type=1",
 					"scene": null
 				},
 				{
